@@ -5,6 +5,7 @@ cd build_lib
 
 cmake %CMAKE_ARGS% -G Ninja ^
                -DBUILD_SHARED_LIBS=ON ^
+               -DCMAKE_WINDOWS_EXPORT_ALL_SYMBOLS=ON ^
                -DPYTHON_PACKAGE=OFF ^
                -DCMAKE_BUILD_TYPE=Release ^
                -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX% ^
